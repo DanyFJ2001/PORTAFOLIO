@@ -54,9 +54,9 @@ const projects = [
     categories: ['Web', 'IA'],
     description: 'Sistema web de gestión de inventario para laboratorio médico multi-sucursal. Permite cargar inventario inicial desde Excel, pistolado de productos mediante scanner de códigos de barras en tiempo real y control de stock con validación de máximos automáticos. La funcionalidad principal es el procesamiento de facturas con IA: el usuario sube la factura en PDF, la IA detecta automáticamente productos y cantidades, los cruza por similitud de nombre con el inventario existente y actualiza el stock sin intervención manual. Sincronización en tiempo real con Firebase, exportación a Excel, impresión de códigos de barras y alertas de inventario bajo.',
     tech: ['Angular', 'Firebase', 'Next.js', 'REST APIs', 'Inteligencia Artificial'],
-    images: ["/imagenes/inventario/1.png",
-        "/imagenes/inventario/2.png",
-        "/imagenes/inventario/3.png",
+    images: ["imagenes/inventario/1.png",
+        "imagenes/inventario/2.png",
+        "imagenes/inventario/3.png",
     ]
   },
   // 4
@@ -65,8 +65,8 @@ const projects = [
     categories: ['IA', 'Python'],
     description: 'Sistema backend en Python que recibe historias clínicas en PDF, las convierte automáticamente en imágenes y las procesa mediante la API de Gemini (Google AI) para extraer datos médicos de forma estructurada sin intervención manual. Incluye fallback automático entre múltiples modelos de IA (Gemini, NVIDIA Nemotron, Amazon Nova, Llama Vision) para garantizar disponibilidad continua. Se optimizó el rendimiento reduciendo el tiempo de procesamiento de 8–12 segundos a 3–5 segundos por documento mediante compresión de imágenes y procesamiento paralelo con ThreadPoolExecutor. Implementado en laboratorio médico multi-sucursal, eliminando la carga manual de digitación de datos clínicos.',
     tech: ['Python', 'Gemini API', 'NVIDIA Nemotron', 'Flask', 'ThreadPoolExecutor', 'REST APIs'],
-    images: ["/imagenes/medicos/1.png",
-        "/imagenes/medicos/2.png",
+    images: ["imagenes/medicos/1.png",
+        "imagenes/medicos/2.png",
     ]
   },
   // 5
@@ -75,10 +75,10 @@ const projects = [
     categories: ['Web', 'IA'],
     description: 'Plataforma web para envío masivo de mensajes por WhatsApp orientada a campañas de marketing. Permite cargar base de datos de contactos, redactar un mensaje base y programar el envío automático. La funcionalidad clave es la integración con IA: antes de cada envío, el agente genera variaciones automáticas del mensaje original para que cada contacto reciba una versión diferente, evitando que WhatsApp detecte el envío como spam y bloquee el número. Control total del broadcast en tiempo real (pausar, reanudar, cancelar), visualización de progreso, historial de campañas, módulo de analytics para identificar leads según respuestas recibidas, y conexión por código QR con estado en tiempo real vía Socket.IO.',
     tech: ['Angular', 'Node.js', 'Socket.IO', 'WhatsApp API', 'Inteligencia Artificial', 'REST APIs'],
-    images: ["/imagenes/difuciones/1.jpeg",
-        "/imagenes/difuciones/2.jpeg",
-        "/imagenes/difuciones/4.jpeg",
-        "/imagenes/difuciones/5.jpeg",
+    images: ["imagenes/difuciones/1.jpeg",
+        "imagenes/difuciones/2.jpeg",
+        "imagenes/difuciones/4.jpeg",
+        "imagenes/difuciones/5.jpeg",
     ]
   },
   // 6
@@ -87,7 +87,7 @@ const projects = [
     categories: ['IA', 'Python'],
     description: 'Servicio backend en Python para transcripción automática de reuniones a partir de archivos de video. El sistema recibe el video, extrae el audio y lo procesa mediante Whisper (OpenAI) aprovechando aceleración por GPU NVIDIA para reducir significativamente los tiempos de procesamiento frente a CPU tradicional. La API construida con Flask expone el endpoint de carga y devuelve la transcripción completa en texto, lista para ser consumida por cualquier frontend o sistema externo.',
     tech: ['Python', 'Flask', 'Whisper OpenAI', 'NVIDIA CUDA', 'REST APIs'],
-    images: ["/imagenes/transcriptor/8dea95dc-2da2-48a1-a2b3-cafc72edbd49.jpg"]
+    images: ["imagenes/transcriptor/8dea95dc-2da2-48a1-a2b3-cafc72edbd49.jpg"]
   },
   // 7
   {
@@ -115,11 +115,11 @@ const projects = [
     categories: ['Web', 'Pagos'],
     description: 'Plataforma web completa para gestión de sorteos online, adaptada para dispositivos móviles y escritorio. El usuario selecciona su participación y realiza el pago mediante múltiples métodos integrados. Una vez confirmado el pago, el sistema genera y envía automáticamente el número de ticket al participante tanto por WhatsApp como al correo registrado. El participante puede consultar su ticket desde la misma página. Incluye panel de administración para gestionar participantes, sorteos activos y ventas, además de vinculación de redes sociales del organizador.',
     tech: ['Angular', 'MercadoPago', 'MySQL', 'WhatsApp API', 'REST APIs'],
-    images: ["/imagenes/sorteos/5.jpeg",
-        "/imagenes/sorteos/4.jpeg",
-        "/imagenes/sorteos/3.png",
-        "/imagenes/sorteos/2.png",
-        "/imagenes/sorteos/1.png",
+    images: ["imagenes/sorteos/5.jpeg",
+        "imagenes/sorteos/4.jpeg",
+        "imagenes/sorteos/3.png",
+        "imagenes/sorteos/2.png",
+        "imagenes/sorteos/1.png",
     ]
   },
   // 10
@@ -128,10 +128,10 @@ const projects = [
     categories: ['Web', 'Landing'],
     description: 'Sitio web informativo para refugio de mascotas diseñado para conectar animales con posibles adoptantes y personas dispuestas a apoyar la causa. Presenta de forma atractiva la misión del refugio, los animales disponibles y las formas de contribuir. Incluye formulario de agendamiento de visitas con validación de datos, y sección de donaciones con información de cuentas bancarias para apoyo económico directo. Desarrollado con enfoque en diseño limpio, navegación intuitiva y experiencia de usuario amigable para todo tipo de público.',
     tech: ['HTML', 'CSS', 'Bootstrap', 'JavaScript', 'Firebase'],
-    images: ["/imagenes/mininos/1.jpeg",
-        "/imagenes/mininos/2.png",
-        "/imagenes/mininos/3.png",
-        "/imagenes/mininos/4.png",
+    images: ["imagenes/mininos/1.jpeg",
+        "imagenes/mininos/2.png",
+        "imagenes/mininos/3.png",
+        "imagenes/mininos/4.png",
     ]
   }
 ];
