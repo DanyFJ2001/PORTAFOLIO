@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dany Fernández – Full Stack Developer</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Mono:wght@300;400;500&family=Playfair+Display:ital,wght@0,700;0,900;1,700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- ─── CURSOR ─────────────────────────────── -->
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-follower" id="cursorFollower"></div>
+
+  <!-- ─── NAV ───────────────────────────────── -->
+  <nav id="nav">
+    <div class="nav-inner">
+      <span class="nav-logo">DF<span class="nav-dot">.</span></span>
+      <ul class="nav-links">
+        <li><a href="#hero">Inicio</a></li>
+        <li><a href="#stack">Stack</a></li>
+        <li><a href="#experience">Experiencia</a></li>
+        <li><a href="#projects">Proyectos</a></li>
+        <li><a href="#contact" class="nav-cta">Contacto</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span>
+      </button>
+    </div>
+    <div class="mobile-menu" id="mobileMenu">
+      <a href="#hero" class="mob-link">Inicio</a>
+      <a href="#stack" class="mob-link">Stack</a>
+      <a href="#experience" class="mob-link">Experiencia</a>
+      <a href="#projects" class="mob-link">Proyectos</a>
+      <a href="#contact" class="mob-link">Contacto</a>
+    </div>
+  </nav>
+
+  <!-- ─── HERO ──────────────────────────────── -->
+  <section id="hero" class="section-hero">
+    <div class="hero-noise"></div>
+
+    <div class="hero-inner">
+      <div class="hero-left">
+        <div class="hero-label reveal-up">Full Stack Developer · Quito, EC</div>
+
+        <h1 class="hero-name reveal-up" style="--delay:.1s">
+          <span class="name-line">Dany</span>
+          <span class="name-line name-accent">Fernández</span>
+        </h1>
+
+        <p class="hero-bio reveal-up" style="--delay:.2s">
+          Desarrollo sistemas web, apps móviles y automatizaciones con IA
+          que resuelven problemas reales de negocio. Angular, Laravel,
+          Flutter &amp; Python.
+        </p>
+
+        <div class="hero-socials reveal-up" style="--delay:.3s">
+          <a href="https://wa.me/593987973857" target="_blank" class="social-pill" aria-label="WhatsApp">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+            WhatsApp
+          </a>
+          <a href="https://mail.google.com/mail/?view=cm&fs=1&to=danyjoel345@gmail.com&su=Contacto%20desde%20mi%20web&body=Hola,%20quiero%20información."  class="social-pill" aria-label="Email">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,12 2,6"/></svg>
+            Email
+          </a>
+          <a href="https://github.com" target="_blank" class="social-pill" aria-label="GitHub">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg>
+            GitHub
+          </a>
+          <a href="https://linkedin.com" target="_blank" class="social-pill" aria-label="LinkedIn">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+            LinkedIn
+          </a>
+        </div>
+
+        <div class="hero-stats reveal-up" style="--delay:.4s">
+          <div class="hstat"><span class="hstat-num">9+</span><span class="hstat-lbl">Proyectos</span></div>
+          <div class="hstat-div"></div>
+          <div class="hstat"><span class="hstat-num">3+</span><span class="hstat-lbl">Años exp.</span></div>
+          <div class="hstat-div"></div>
+          <div class="hstat"><span class="hstat-num">5</span><span class="hstat-lbl">Tecnologías</span></div>
+        </div>
+      </div>
+
+      <div class="hero-right reveal-up" style="--delay:.25s">
+        <div class="photo-frame">
+          <div class="photo-inner">
+             <img src="fotoperfil.jpeg" alt="Dany Fernández"> 
+            <div class="photo-placeholder">
+              <div class="photo-initials">DF</div>
+              <div class="photo-hint">Agrega tu foto aquí</div>
+            </div>
+          </div>
+          <div class="photo-deco photo-deco-1"></div>
+          <div class="photo-deco photo-deco-2"></div>
+          <div class="photo-tag">
+            <span class="tag-dot"></span>
+            Disponible para proyectos
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero-scroll-hint">
+      <span>scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ─── TECH STACK ─────────────────────────── -->
+  <section id="stack" class="section-stack">
+    <div class="section-label-vert">TECH STACK</div>
+
+    <div class="stack-header">
+      <div class="stack-title-wrap">
+        <span class="section-eyebrow reveal-left">Herramientas</span>
+        <h2 class="section-heading reveal-left" style="--delay:.1s">
+          Presiona<br>una tecla
+        </h2>
+      </div>
+      <p class="stack-subtitle reveal-left" style="--delay:.2s">
+        Cada tecla es una tecnología con la que<br>trabajo en proyectos reales.
+      </p>
+    </div>
+
+    <!-- 3D Keyboard -->
+    <div class="keyboard-scene" id="keyboardScene">
+      <div class="keyboard-wrap" id="keyboardWrap">
+        <div class="keyboard" id="keyboard">
+          <div class="kbase">
+
+            <div class="row">
+              <div class="key" style="--c:#dd0031;--cs:#7a0018" data-tech="Angular" data-desc="Framework frontend para SPAs, dashboards y sistemas empresariales. Usado en múltiples proyectos profesionales." data-badge="Frontend · 3+ años" data-emoji="🅰">
+                <div class="kt"><div class="ki">🅰</div><div class="kl">Angular</div></div><div class="kb"></div><div class="kr"></div></div>
+              <div class="key" style="--c:#ff2d20;--cs:#8a0f0a" data-tech="Laravel" data-desc="Backend PHP para APIs REST, autenticación y sistemas web robustos con arquitectura MVC." data-badge="Backend · PHP" data-emoji="🔴">
+                <div class="kt"><div class="ki">🔴</div><div class="kl">Laravel</div></div><div class="kb"></div><div class="kr"></div></div>
+              <div class="key" style="--c:#42a5f5;--cs:#0d4a80" data-tech="Flutter" data-desc="Apps móviles multiplataforma para iOS y Android con una sola base de código en Dart." data-badge="Mobile · Dart" data-emoji="💙">
+                <div class="kt"><div class="ki">💙</div><div class="kl">Flutter</div></div><div class="kb"></div><div class="kr"></div></div>
+              <div class="key" style="--c:#3776ab;--cs:#1a3d60" data-tech="Python" data-desc="Automatizaciones, scripts IA, procesamiento de documentos con modelos de visión computacional." data-badge="AI · Scripting" data-emoji="🐍">
+                <div class="kt"><div class="ki">🐍</div><div class="kl">Python</div></div><div class="kb"></div><div class="kr"></div></div>
+              <div class="key" style="--c:#5a9e55;--cs:#254822" data-tech="Node.js" data-desc="Servidores backend y APIs en tiempo real con WebSockets y Socket.IO." data-badge="Runtime · JS" data-emoji="🟢">
+                <div class="kt"><div class="ki">🟢</div><div class="kl">Node.js</div></div><div class="kb"></div><div class="kr"></div></div>
+              <div class="key" style="--c:#cccccc;--cs:#555" data-tech="Next.js" data-desc="Framework SSR full-stack con React para apps web modernas y optimizadas para SEO." data-badge="SSR · React" data-emoji="⬛">
+                <div class="kt"><div class="ki">⬛</div><div class="kl">Next.js</div></div><div class="kb"></div><div class="kr"></div></div>
+            </div>
+
+            <div class="row">
+              <div class="key" style="--c:#f5a623;--cs:#7a4e00" data-tech="Firebase" data-desc="Base de datos en tiempo real, autenticación y cloud functions. Backbone de varios proyectos." data-badge="BaaS · Google" data-emoji="🔥">
+                <div class="kt"><div class="ki">🔥</div><div class="kl">Firebase</div></div><div class="kb"></div><div class="kr"></div></div>
+              <div class="key" style="--c:#00758f;--cs:#003a47" data-tech="MySQL" data-desc="Diseño e implementación de bases de datos relacionales para sistemas empresariales." data-badge="Database · SQL" data-emoji="🐬">
+                <div class="kt"><div class="ki">🐬</div><div class="kl">MySQL</div></div><div class="kb"></div><div class="kr"></div></div>
+              <div class="key" style="--c:#e7462c;--cs:#7a1f10" data-tech="n8n" data-desc="Automatización de workflows: WhatsApp, CRM, bases de datos y notificaciones en un solo flujo." data-badge="Automation" data-emoji="🔗">
+                <div class="kt"><div class="ki">🔗</div><div class="kl">n8n</div></div><div class="kb"></div><div class="kr"></div></div>
+              <div class="key" style="--c:#3178c6;--cs:#14386b" data-tech="TypeScript" data-desc="JavaScript tipado para proyectos escalables, reduciendo bugs y mejorando el mantenimiento." data-badge="Language" data-emoji="🔷">
+                <div class="kt"><div class="ki">🔷</div><div class="kl">TypeScript</div></div><div class="kb"></div><div class="kr"></div></div>
+              <div class="key" style="--c:#282828;--cs:#111" data-tech="Socket.IO" data-desc="Comunicación bidireccional en tiempo real para apps de broadcast masivo y dashboards live." data-badge="Realtime" data-emoji="⚡">
+                <div class="kt"><div class="ki">⚡</div><div class="kl">Socket.IO</div></div><div class="kb"></div><div class="kr"></div></div>
+              <div class="key" style="--c:#7b7fb5;--cs:#363869" data-tech="PHP" data-desc="Desarrollo server-side y mantenimiento de sistemas legacy con integración a bases de datos." data-badge="Backend" data-emoji="🐘">
+                <div class="kt"><div class="ki">🐘</div><div class="kl">PHP</div></div><div class="kb"></div><div class="kr"></div></div>
+            </div>
+
+            <div class="row">
+              <div class="key" style="--c:#4285f4;--cs:#1a3a80" data-tech="Gemini AI" data-desc="Procesamiento de documentos médicos PDF: extracción automática de datos con visión por computadora." data-badge="AI · Google" data-emoji="✨">
+                <div class="kt"><div class="ki">✨</div><div class="kl">Gemini</div></div><div class="kb"></div><div class="kr"></div></div>
+              <div class="key" style="--c:#10a37f;--cs:#054d3a" data-tech="Whisper" data-desc="Transcripción automática de reuniones en video con aceleración GPU NVIDIA CUDA para mayor velocidad." data-badge="AI · NVIDIA" data-emoji="🎙️">
+                <div class="kt"><div class="ki">🎙️</div><div class="kl">Whisper</div></div><div class="kb"></div><div class="kr"></div></div>
+              <div class="key" style="--c:#1e88b4;--cs:#0d3d54" data-tech="Bitrix24" data-desc="Administración, automatización y personalización de CRM empresarial con pipelines y KPIs." data-badge="CRM" data-emoji="📊">
+                <div class="kt"><div class="ki">📊</div><div class="kl">Bitrix24</div></div><div class="kb"></div><div class="kr"></div></div>
+              <div class="key" style="--c:#cc0000;--cs:#660000" data-tech="MikroTik" data-desc="Configuración de redes, VPNs site-to-site y firewall Sophos para infraestructura multi-sucursal." data-badge="Networking" data-emoji="📡">
+                <div class="kt"><div class="ki">📡</div><div class="kl">MikroTik</div></div><div class="kb"></div><div class="kr"></div></div>
+              <div class="key kw2" style="--c:#6366f1;--cs:#2d2f8a" data-tech="REST APIs" data-desc="Diseño, consumo e integración de APIs externas en todos los proyectos: pagos, mapas, IA, mensajería." data-badge="Integration" data-emoji="🌐">
+                <div class="kt"><div class="ki">🌐</div><div class="kl">REST APIs</div></div><div class="kb"></div><div class="kr"></div></div>
+            </div>
+
+            <div class="row">
+              <div class="key kw3" style="--c:#25d366;--cs:#0e5a2a" data-tech="WhatsApp API" data-desc="Difusiones masivas con agente IA anti-spam, chatbots de atención y sincronización con CRM Bitrix24." data-badge="Messaging" data-emoji="💬">
+                <div class="kt"><div class="ki">💬</div><div class="kl">WhatsApp API</div></div><div class="kb"></div><div class="kr"></div></div>
+              <div class="key" style="--c:#f59e0b;--cs:#7a4e05" data-tech="Payphone" data-desc="Integración de pasarela de pagos para Ecuador: PayPhone, banco Pichincha y Guayaquil." data-badge="Payments · EC" data-emoji="💳">
+                <div class="kt"><div class="ki">💳</div><div class="kl">Payphone</div></div><div class="kb"></div><div class="kr"></div></div>
+              <div class="key" style="--c:#34a853;--cs:#155228" data-tech="Google Maps" data-desc="Integración de mapas para visualización de rutas, cálculo de distancias y evaluación de riesgos." data-badge="Maps · API" data-emoji="🗺️">
+                <div class="kt"><div class="ki">🗺️</div><div class="kl">Maps API</div></div><div class="kb"></div><div class="kr"></div></div>
+              <div class="key" style="--c:#2496ed;--cs:#0d4a7a" data-tech="Docker" data-desc="Contenerización para despliegue consistente de servicios en la nube y entornos locales." data-badge="DevOps" data-emoji="🐳">
+                <div class="kt"><div class="ki">🐳</div><div class="kl">Docker</div></div><div class="kb"></div><div class="kr"></div></div>
+              <div class="key" style="--c:#333;--cs:#111" data-tech="Flask" data-desc="Microframework Python para APIs de IA, endpoints de procesamiento y backends ligeros." data-badge="Python · API" data-emoji="🌶️">
+                <div class="kt"><div class="ki">🌶️</div><div class="kl">Flask</div></div><div class="kb"></div><div class="kr"></div></div>
+            </div>
+
+          </div><!-- .kbase -->
+        </div><!-- .keyboard -->
+      </div><!-- .keyboard-wrap -->
+    </div><!-- .keyboard-scene -->
+
+    <!-- Info panel -->
+    <div class="kpanel" id="kpanel">
+      <div class="kpanel-glow"></div>
+      <div class="kpanel-name" id="kpName"></div>
+      <div class="kpanel-desc" id="kpDesc"></div>
+      <div class="kpanel-badge" id="kpBadge"></div>
+    </div>
+
+  </section>
+
+  <!-- ─── EXPERIENCE ─────────────────────────── -->
+  <section id="experience" class="section-experience">
+    <div class="section-label-vert">EXPERIENCIA</div>
+
+    <div class="exp-header">
+      <span class="section-eyebrow reveal-left">Trayectoria</span>
+      <h2 class="section-heading reveal-left" style="--delay:.1s">Experiencia<br>profesional</h2>
+    </div>
+
+    <div class="exp-timeline">
+
+      <div class="exp-item reveal-up" style="--delay:.1s">
+        <div class="exp-date">
+          <span class="exp-year">2025</span>
+          <span class="exp-dash">—</span>
+          <span class="exp-year">2026</span>
+        </div>
+        <div class="exp-card">
+          <div class="exp-card-header">
+            <div>
+              <h3 class="exp-title">Técnico en Sistemas / Analista TI</h3>
+              <p class="exp-company">SEGURILAB – Centro Médico de Especialidades</p>
+            </div>
+            <span class="exp-location">Quito · EC</span>
+          </div>
+          <p class="exp-desc">
+            Gestión integral de tecnología para laboratorio médico con 4 sucursales a nivel nacional
+            (Quito, Lago Agrio, Michelena, Jipijapa). Desarrollo de software, infraestructura de redes
+            y automatización de procesos internos.
+          </p>
+          <div class="exp-tasks">
+            <div class="exp-task">
+              <span class="task-icon">⬡</span>
+              Desarrollo web con Angular y Laravel para módulos de inventario con IA, colas de atención y KPIs comerciales
+            </div>
+            <div class="exp-task">
+              <span class="task-icon">⬡</span>
+              Procesamiento automatizado de documentos médicos (PDF → datos estructurados) con Gemini API y fallback a múltiples modelos
+            </div>
+            <div class="exp-task">
+              <span class="task-icon">⬡</span>
+              Administración de CRM Bitrix24: pipelines, automatizaciones y dashboards para equipo comercial
+            </div>
+            <div class="exp-task">
+              <span class="task-icon">⬡</span>
+              Redes MikroTik y Sophos: VPNs site-to-site, firewall y telefonía IP multi-sucursal
+            </div>
+            <div class="exp-task">
+              <span class="task-icon">⬡</span>
+              Automatizaciones n8n: registro de pacientes, recordatorios WhatsApp y sincronización de datos en tiempo real
+            </div>
+            <div class="exp-task">
+              <span class="task-icon">⬡</span>
+              Soporte técnico de equipos médicos, impresoras y estaciones de trabajo en todas las sucursales
+            </div>
+          </div>
+          <div class="exp-tags">
+            <span class="exp-tag">Angular</span>
+            <span class="exp-tag">Laravel</span>
+            <span class="exp-tag">Python</span>
+            <span class="exp-tag">n8n</span>
+            <span class="exp-tag">Firebase</span>
+            <span class="exp-tag">Bitrix24</span>
+            <span class="exp-tag">MikroTik</span>
+            <span class="exp-tag">Sophos</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="exp-item reveal-up" style="--delay:.2s">
+        <div class="exp-date">
+          <span class="exp-year">2026</span>
+          <span class="exp-dash">—</span>
+          <span class="exp-year">Hoy</span>
+        </div>
+        <div class="exp-card exp-card-alt">
+          <div class="exp-card-header">
+            <div>
+              <h3 class="exp-title">Co-fundador & Desarrollador Full Stack</h3>
+              <p class="exp-company">GF Solutions</p>
+            </div>
+            <span class="exp-location">Freelance · EC</span>
+          </div>
+          <p class="exp-desc">
+            Empresa de desarrollo de software a medida para empresas . Proyectos para clientes
+            en Ecuador, enfocados en automatización, IA y sistemas web/móvil.
+          </p>
+          <div class="exp-tasks">
+            <div class="exp-task">
+              <span class="task-icon">⬡</span>
+              Desarrollo de sistemas CRM con IA para WhatsApp, clasificación de leads con ML y dashboards multi-usuario
+            </div>
+            <div class="exp-task">
+              <span class="task-icon">⬡</span>
+              Plataformas e-commerce con doble dashboard (admin + cliente) e integración de pasarelas de pago
+            </div>
+            <div class="exp-task">
+              <span class="task-icon">⬡</span>
+              Apps móviles Flutter para gestión corporativa con Google Maps y flujos de aprobación
+            </div>
+          </div>
+          <div class="exp-tags">
+            <span class="exp-tag">Angular</span>
+            <span class="exp-tag">Flutter</span>
+            <span class="exp-tag">Node.js</span>
+            <span class="exp-tag">Firebase</span>
+            <span class="exp-tag">WhatsApp API</span>
+          </div>
+        </div>
+      </div>
+
+    </div><!-- .exp-timeline -->
+  </section>
+
+  <!-- ─── PROJECTS ───────────────────────────── -->
+  <section id="projects" class="section-projects">
+    <div class="section-label-vert">PROYECTOS</div>
+
+    <div class="proj-header">
+      <span class="section-eyebrow reveal-left">Portafolio</span>
+      <h2 class="section-heading reveal-left" style="--delay:.1s">Proyectos<br>destacados</h2>
+      <div class="proj-filters reveal-left" style="--delay:.2s">
+        <button class="pfilter active" data-filter="all">Todos</button>
+        <button class="pfilter" data-filter="web">Web</button>
+        <button class="pfilter" data-filter="mobile">Mobile</button>
+        <button class="pfilter" data-filter="ai">IA</button>
+        <button class="pfilter" data-filter="automation">Auto.</button>
+      </div>
+    </div>
+
+    <div class="proj-grid" id="projectGrid">
+
+
+      <!-- 1: E-commerce -->
+      <article class="proj-card reveal-up" style="--delay:.08s" data-category="web" data-project="1">
+        <div class="proj-thumb">
+          <div class="proj-thumb-inner thumb-ecommerce"><span class="thumb-text">E-COMMERCE</span></div>
+          <div class="proj-overlay"><span class="proj-open-btn">Ver proyecto →</span></div>
+        </div>
+        <div class="proj-info">
+          <div class="proj-cats"><span class="proj-cat">Web</span><span class="proj-cat">E-commerce</span></div>
+          <h3 class="proj-name">Plataforma E-commerce con Doble Dashboard</h3>
+          <p class="proj-short">Tienda online con dos paneles diferenciados: administrador y cliente, para empresa de videovigilancia.</p>
+          <div class="proj-tech-row"><span class="ptag">Angular</span><span class="ptag">Next.js</span><span class="ptag">Firebase</span><span class="ptag">Google Maps</span></div>
+        </div>
+      </article>
+
+      <!-- 2: StreamFlix -->
+      <article class="proj-card reveal-up" style="--delay:.11s" data-category="mobile" data-project="2">
+        <div class="proj-thumb">
+          <div class="proj-thumb-inner thumb-streamflix"><span class="thumb-text">STREAMFLIX</span></div>
+          <div class="proj-overlay"><span class="proj-open-btn">Ver proyecto →</span></div>
+        </div>
+        <div class="proj-info">
+          <div class="proj-cats"><span class="proj-cat">Mobile</span><span class="proj-cat">Flutter</span></div>
+          <h3 class="proj-name">StreamFlix – App Móvil de Streaming y Trailers</h3>
+          <p class="proj-short">Feed vertical de trailers estilo TikTok sin cortes de audio, con acceso directo a la película completa con un tap.</p>
+          <div class="proj-tech-row"><span class="ptag">Flutter</span><span class="ptag">Firebase</span><span class="ptag">Dart</span></div>
+        </div>
+      </article>
+
+      <!-- 3: Inventario IA -->
+      <article class="proj-card reveal-up" style="--delay:.14s" data-category="web ai" data-project="3">
+        <div class="proj-thumb">
+          <div class="proj-thumb-inner thumb-inventario"><span class="thumb-text">INVENTARIO IA</span></div>
+          <div class="proj-overlay"><span class="proj-open-btn">Ver proyecto →</span></div>
+        </div>
+        <div class="proj-info">
+          <div class="proj-cats"><span class="proj-cat">Web</span><span class="proj-cat">IA</span></div>
+          <h3 class="proj-name">Módulo de Inventario con IA y Códigos de Barras</h3>
+          <p class="proj-short">Sistema de inventario que procesa facturas PDF con IA y actualiza el stock automáticamente.</p>
+          <div class="proj-tech-row"><span class="ptag">Angular</span><span class="ptag">Firebase</span><span class="ptag">IA</span><span class="ptag">REST APIs</span></div>
+        </div>
+      </article>
+
+      <!-- 4: Visión Artificial -->
+      <article class="proj-card reveal-up" style="--delay:.17s" data-category="ai" data-project="4">
+        <div class="proj-thumb">
+          <div class="proj-thumb-inner thumb-vision"><span class="thumb-text">VISIÓN IA</span></div>
+          <div class="proj-overlay"><span class="proj-open-btn">Ver proyecto →</span></div>
+        </div>
+        <div class="proj-info">
+          <div class="proj-cats"><span class="proj-cat">IA</span><span class="proj-cat">Python</span></div>
+          <h3 class="proj-name">Procesamiento de Documentos Médicos con IA</h3>
+          <p class="proj-short">Extrae datos estructurados de historias clínicas PDF con Gemini AI. De 12s a 3s por documento.</p>
+          <div class="proj-tech-row"><span class="ptag">Python</span><span class="ptag">Gemini API</span><span class="ptag">Flask</span></div>
+        </div>
+      </article>
+
+      <!-- 5: Difusiones WhatsApp -->
+      <article class="proj-card reveal-up" style="--delay:.2s" data-category="web ai" data-project="5">
+        <div class="proj-thumb">
+          <div class="proj-thumb-inner thumb-whatsapp"><span class="thumb-text">WHATSAPP IA</span></div>
+          <div class="proj-overlay"><span class="proj-open-btn">Ver proyecto →</span></div>
+        </div>
+        <div class="proj-info">
+          <div class="proj-cats"><span class="proj-cat">Web</span><span class="proj-cat">IA</span></div>
+          <h3 class="proj-name">Difusiones Masivas por WhatsApp con Agente IA</h3>
+          <p class="proj-short">Broadcast masivo con IA anti-spam que varía cada mensaje para evitar bloqueos de WhatsApp.</p>
+          <div class="proj-tech-row"><span class="ptag">Angular</span><span class="ptag">Node.js</span><span class="ptag">Socket.IO</span></div>
+        </div>
+      </article>
+
+      <!-- 6: Transcriptor GPU -->
+      <article class="proj-card reveal-up" style="--delay:.23s" data-category="ai" data-project="6">
+        <div class="proj-thumb">
+          <div class="proj-thumb-inner thumb-whisper"><span class="thumb-text">WHISPER GPU</span></div>
+          <div class="proj-overlay"><span class="proj-open-btn">Ver proyecto →</span></div>
+        </div>
+        <div class="proj-info">
+          <div class="proj-cats"><span class="proj-cat">IA</span><span class="proj-cat">Python</span></div>
+          <h3 class="proj-name">Transcriptor de Reuniones con GPU NVIDIA</h3>
+          <p class="proj-short">Transcripción automática de videos con Whisper + CUDA. Mucho más rápido que CPU tradicional.</p>
+          <div class="proj-tech-row"><span class="ptag">Python</span><span class="ptag">Whisper</span><span class="ptag">NVIDIA CUDA</span><span class="ptag">Flask</span></div>
+        </div>
+      </article>
+
+      <!-- 7: n8n -->
+      <article class="proj-card reveal-up" style="--delay:.26s" data-category="automation" data-project="7">
+        <div class="proj-thumb">
+          <div class="proj-thumb-inner thumb-n8n"><span class="thumb-text">n8n AUTO.</span></div>
+          <div class="proj-overlay"><span class="proj-open-btn">Ver proyecto →</span></div>
+        </div>
+        <div class="proj-info">
+          <div class="proj-cats"><span class="proj-cat">Automation</span></div>
+          <h3 class="proj-name">Automatización Empresarial con n8n</h3>
+          <p class="proj-short">Workflows 24/7: registro de pacientes, recordatorios WhatsApp, sincronización CRM y procesamiento PDF.</p>
+          <div class="proj-tech-row"><span class="ptag">n8n</span><span class="ptag">WhatsApp API</span><span class="ptag">Bitrix24</span><span class="ptag">MySQL</span></div>
+        </div>
+      </article>
+
+      <!-- 8: Viajes -->
+      <article class="proj-card reveal-up" style="--delay:.29s" data-category="mobile" data-project="8">
+        <div class="proj-thumb">
+          <div class="proj-thumb-inner thumb-viajes"><span class="thumb-text">VIAJES CORP.</span></div>
+          <div class="proj-overlay"><span class="proj-open-btn">Ver proyecto →</span></div>
+        </div>
+        <div class="proj-info">
+          <div class="proj-cats"><span class="proj-cat">Mobile</span><span class="proj-cat">Maps</span></div>
+          <h3 class="proj-name">App de Gestión de Viajes Corporativos</h3>
+          <p class="proj-short">App Flutter con evaluación automática de riesgo de viajes y flujo de aprobaciones multi-nivel.</p>
+          <div class="proj-tech-row"><span class="ptag">Flutter</span><span class="ptag">Firebase</span><span class="ptag">Google Maps</span><span class="ptag">Dart</span></div>
+        </div>
+      </article>
+
+      <!-- 9: Sorteos -->
+      <article class="proj-card reveal-up" style="--delay:.32s" data-category="web" data-project="9">
+        <div class="proj-thumb">
+          <div class="proj-thumb-inner thumb-sorteos"><span class="thumb-text">SORTEOS</span></div>
+          <div class="proj-overlay"><span class="proj-open-btn">Ver proyecto →</span></div>
+        </div>
+        <div class="proj-info">
+          <div class="proj-cats"><span class="proj-cat">Web</span><span class="proj-cat">Pagos</span></div>
+          <h3 class="proj-name">Plataforma de Sorteos Online con Pagos</h3>
+          <p class="proj-short">Gestión completa de rifas con múltiples métodos de pago y envío de tickets por WhatsApp y email.</p>
+          <div class="proj-tech-row"><span class="ptag">Angular</span><span class="ptag">MercadoPago</span><span class="ptag">MySQL</span></div>
+        </div>
+      </article>
+
+      <!-- 10: Mininos -->
+      <article class="proj-card reveal-up" style="--delay:.35s" data-category="web" data-project="10">
+        <div class="proj-thumb">
+          <div class="proj-thumb-inner thumb-mininos"><span class="thumb-text">MININOS 🐱</span></div>
+          <div class="proj-overlay"><span class="proj-open-btn">Ver proyecto →</span></div>
+        </div>
+        <div class="proj-info">
+          <div class="proj-cats"><span class="proj-cat">Web</span><span class="proj-cat">Landing</span></div>
+          <h3 class="proj-name">Mininos Felices – Refugio de Mascotas</h3>
+          <p class="proj-short">Landing page para refugio con formulario de visitas, galería de animales y sección de donaciones.</p>
+          <div class="proj-tech-row"><span class="ptag">HTML</span><span class="ptag">Bootstrap</span><span class="ptag">JavaScript</span><span class="ptag">Firebase</span></div>
+        </div>
+      </article>
+
+    </div><!-- .proj-grid -->
+  </section>
+
+  <!-- ─── PROJECT MODAL ─────────────────────── -->
+  <div class="modal-backdrop" id="modalBackdrop">
+    <div class="modal" id="modal">
+      <button class="modal-close" id="modalClose">✕</button>
+      <div class="modal-inner">
+        <div class="modal-gallery" id="modalGallery"></div>
+        <div class="modal-content">
+          <div class="modal-cats" id="modalCats"></div>
+          <h2 class="modal-title" id="modalTitle"></h2>
+          <p class="modal-desc" id="modalDesc"></p>
+          <div class="modal-tags" id="modalTags"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ─── CONTACT ────────────────────────────── -->
+  <section id="contact" class="section-contact">
+    <div class="contact-inner">
+      <span class="section-eyebrow reveal-left">Hablemos</span>
+      <h2 class="contact-heading reveal-left" style="--delay:.1s">¿Tienes un<br>proyecto?</h2>
+      <p class="contact-sub reveal-left" style="--delay:.2s">
+        Estoy disponible para proyectos freelance,<br>colaboraciones y oportunidades laborales.
+      </p>
+      <div class="contact-actions reveal-up" style="--delay:.3s">
+        <a href="https://wa.me/593987973857" target="_blank" class="btn-contact-primary">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+          Escribir por WhatsApp
+        </a>
+        <a href="/cdn-cgi/l/email-protection#a0c4c1ced9c6d292909091e0c7cdc1c9cc8ec3cfcd" class="btn-contact-secondary"><span class="__cf_email__" data-cfemail="9df9fcf3e4fbefafadadacddfaf0fcf4f1b3fef2f0">[email&#160;protected]</span></a>
+      </div>
+    </div>
+    <div class="contact-deco">
+      <span class="deco-big">DF.</span>
+    </div>
+  </section>
+
+  <!-- ─── FOOTER ─────────────────────────────── -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <span class="footer-logo">Dany Fernández</span>
+            <span class="footer-copy">© 2026 · Quito, Ecuador</span>
+      <span class="footer-made">Hecho con ☕ y código</span>
+    </div>
+  </footer>
+
+  <!-- ─── LIGHTBOX ─────────────────────────────── -->
+  <div class="lightbox" id="lightbox">
+    <button class="lightbox-close" id="lbClose">✕</button>
+    <button class="lightbox-nav prev" id="lbPrev">&#8249;</button>
+    <img class="lightbox-img" id="lbImg" src="" alt="">
+    <button class="lightbox-nav next" id="lbNext">&#8250;</button>
+    <div class="lightbox-dots" id="lbDots"></div>
+    <div class="lightbox-counter" id="lbCounter"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
